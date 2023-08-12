@@ -1,23 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 type Props = {
-  value : number;
+  value : any;
   onIncrement : () => void;
   onDecrement : () => void;
 }
 
 function App({value, onIncrement, onDecrement} : Props) {
+  const [todoValue, setTodoValue] = useState("");
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setTodoValue(e.target.value);
+  }
+  const addTodo = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();       //페이지가 리플래쉬 되는것을 막아준다.
+    setTodoValue("");
+  }
+  
   return (
     <div className="App">
-      Clicked: {value} times
-    <button onClick={onIncrement}>
-      +
-    </button>
-    <button onClick={onDecrement}>
-      -
-    </button>
+      {/* Clicked: {value} times */}
+      <button onClick={onIncrement}>
+        +
+      </button>
+      <button onClick={onDecrement}>
+        -
+      </button>
+
+      <form onSubmit={addTodo}>
+        <input type="text" value={todoValue} onChange={handleChange} />
+        <input type="submit"/>
+      </form>
     </div>
   );
 }

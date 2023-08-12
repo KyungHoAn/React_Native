@@ -38,3 +38,6 @@ button > hitRect > pressRect > pressRetentionOffset > hitSlop
 ## Reducer
 - 리듀서는 애플리케이션 상태의 변경 사항을 결정하고 업데이트된 상태를 반환하는 함수, 인수로 조취를 취하고 store내부의 상태를 업데이트 한다.
 
+## Redux Provider
+- Provider : 컴포넌트가 여러개 있으면 리덕스 스토어에 접근을 할 수 있게 제공 해준다.
+
