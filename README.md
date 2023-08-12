@@ -41,3 +41,5 @@ button > hitRect > pressRect > pressRetentionOffset > hitSlop
 ## Redux Provider
 - Provider : 컴포넌트가 여러개 있으면 리덕스 스토어에 접근을 할 수 있게 제공 해준다.
 
+## Redux Thunk
+- 리덕스를 사용하는 앱에서 비동기 작업을 할 때 많이 사용하는 방법
