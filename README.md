@@ -43,3 +43,10 @@ button > hitRect > pressRect > pressRetentionOffset > hitSlop
 
 ## Redux Thunk
 - 리덕스를 사용하는 앱에서 비동기 작업을 할 때 많이 사용하는 방법
+
+
+# IntstaApp
+## TAB / STACK
+- Stack Navigation는 React Native 앱이 Stack을 사용하여 화면 간에 전환할 수 있는 방법 제공
+ex) 로그인에서 가입 화면으로 이동하면 가입 화면이 로그인 화면 맵 위에 쌓이고 뒤로 이동하면 가입 화면이 스택에서 꺼진다
+
