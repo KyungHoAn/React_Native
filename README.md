@@ -50,3 +50,10 @@ button > hitRect > pressRect > pressRetentionOffset > hitSlop
 - Stack Navigation는 React Native 앱이 Stack을 사용하여 화면 간에 전환할 수 있는 방법 제공
 ex) 로그인에서 가입 화면으로 이동하면 가입 화면이 로그인 화면 맵 위에 쌓이고 뒤로 이동하면 가입 화면이 스택에서 꺼진다
 
+## Animated fㅏ이브러리
+- 애니메이션을 만들기 위한 핵심 워크플로
+1. Animated.Value 생성
+2.  애니메이션 구성 요소의 하나 이상의 스타일 속성에 연결
+3. Animated.timing() 을 사용하여 애니메이션을 통해 업데이트를 구동
+
+## interporlate() 함수
